@@ -8,6 +8,9 @@ WORKDIR /usr/src
 # Add package.json to allow for caching
 COPY package.json /usr/src/package.json
 
+RUN npm config set registry http://registry.npmjs.org/
+
+
 # Install app dependencies
 RUN npm install
 

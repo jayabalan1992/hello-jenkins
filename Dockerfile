@@ -8,7 +8,7 @@ WORKDIR /usr/src
 # Add package.json to allow for caching
 COPY package.json /usr/src/package.json
 
-RUN sudo yum update && yum install -y nodejs npm
+RUN install -y nodejs npm
 
 # Install app dependencies
 RUN npm install

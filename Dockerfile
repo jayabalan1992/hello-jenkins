@@ -1,5 +1,5 @@
 #New Comment
-FROM node:latest
+FROM node:8
 MAINTAINER mike.coleman@docker.com
 
 # set default workdir
